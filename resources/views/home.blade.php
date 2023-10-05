@@ -1,0 +1,9 @@
+@extends('layouts.global')
+@section('content')
+    @include('components.navbar')
+    @include('components.hero')
+    @include('components.product')
+    @include('components.address')
+    @include('components.contact')
+    @include('components.footer')
+@endsection
