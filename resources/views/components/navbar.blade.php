@@ -10,4 +10,11 @@
         <li><a href="#">Contact</a></li>
         <li><a href="#">About Us</a></li>
     </ul>
+
+    <div class="basis-1/4 flex justify-end">
+        <a href=" " class="bg-black px-8 py-4 w-24 rounded-lg font-bold flex justify-center pr">
+            <p class="invisble text-white">Login</p>
+        </a>
+    </div>
+
 </nav>

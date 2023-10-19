@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Kategori;
+use App\Models\Produk;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home',["produk"=>Produk::take(12)->get()]);
 });
+
+Route::get('/authentication', function () {
+    return view('authentication.login');
+})->name('login');
+
+Route::get('/data/produk', function () {
+    return view('data.produk',["produk"=>Produk::all()]);
+})->name('data.produk');
+
+Route::get('/data/kategori', function () {
+    return view('data.kategori');
+})->name('data.kategori');
+
+Route::get('/data/member', function () {
+    return view('data.member');
+})->name('data.member');

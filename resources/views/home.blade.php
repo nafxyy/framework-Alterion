@@ -2,7 +2,7 @@
 @section('content')
     @include('components.navbar')
     @include('components.hero')
-    @include('components.product')
+    @include('components.produk')
     @include('components.address')
     @include('components.contact')
     @include('components.footer')
