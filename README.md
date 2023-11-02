@@ -43,15 +43,15 @@ Posttest Framework (Alterion)
 ![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/8f597277-89c7-4d80-956f-f52d92fa298d)
 
 ### 3. Menu Admin (Data Produk)
-![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/bd7558d0-cc14-4b0a-a2ed-119065dd5e60)
+![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/4de6ecb2-ced3-4377-a8a6-7d2b8f407a60)
 
 ### 4. Tambah Produk
-![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/8b27b1a2-1a97-420e-acc2-ea70134ffb92)
-![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/47fb034e-ac13-4232-ab1a-964a06c970ac)
+![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/8d3ac76a-1b1e-4a81-80ba-65df4b859091)
+![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/82f5ecdc-2264-47b0-8a68-471fcc4b1b5c)
 
 ### 5. Edit Produk
-![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/46b118c7-6f06-4e78-a07e-8220e1e05c66)
-![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/b58c4086-4cba-4ff2-bdc2-de382718b3c4)
+![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/6bb7cdd7-0b93-4f31-9a5a-7180a965d5cf)
+![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/7296d66b-3475-428a-b3c6-4414fe07c9d2)
 
 ### 6. Hapus Produk
-![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/1b7c8aa6-52a2-47ad-a542-a5c2453559fb)
+![image](https://github.com/nafxyy/framework-Alterion/assets/92091542/99a51f07-ab46-4583-8f21-7ab0a324ad50)
