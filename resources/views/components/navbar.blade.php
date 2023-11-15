@@ -3,7 +3,7 @@
     <a href="#" class="basis-1/4">
         <img src="{{ asset('assets/images/logoalterion.png') }}" alt="Alterion" class="w-fit h-12">
     </a>
-    <ul class="flex flex-row gap-16 justify-center">
+    <ul class="flex flex-row gap-16 justify-center mr-[200px]">
         <li ><a class="hover:bg-slate-100 rounded-md" href="#">Home</a></li>
         <li><a class="hover:bg-slate-100 rounded-md" href="#">Products</a></li>
         <li><a class="hover:bg-slate-100 rounded-md" href="#">Address</a></li>
@@ -11,10 +11,18 @@
         <li><a class="hover:bg-slate-100 rounded-md" href="#">About Us</a></li>
     </ul>
 
-    <div class="basis-1/4 flex justify-end">
-        <a href="{{route('login')}}" class="bg-black px-8 py-4 w-24 rounded-lg font-bold flex justify-center pr">
-            <p class="invisble text-white">Login</p>
-        </a>
+    <div class="flex items-center">
+        @auth
+            <p class="mr-6 text-xl">Hello, {{ auth()->user()->username }}!</p>
+            <form action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="bg-red-500 px-4 py-2 text-white rounded-lg">Logout</button>
+            </form>
+        @else
+            <a href="{{ route('login') }}" class="bg-black px-8 py-4 w-24 rounded-lg font-bold flex justify-center">
+                <p class="text-white">Login</p>
+            </a>
+        @endauth
     </div>
 
 </nav>

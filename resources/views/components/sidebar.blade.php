@@ -1,6 +1,8 @@
 <div class="w-[400px] bg-slate-800">
     <div class="w-full h-full flex flex-col items-center mt-2">
-        <img src="{{ asset('assets/images/logowhitetp.png') }}" alt="" class="w-full pt-4">
+        <a href="{{ route('home') }}" class="w-full pt-4">
+            <img src="{{ asset('assets/images/logowhitetp.png') }}" alt="" class="w-full pt-4">
+        </a>
         <div class="pt-10 flex flex-col">
             <a href="{{route('staff.dashboard')}}" class="items-center p-5 flex text-white mx-8 my-5 hover:bg-slate-900 rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -27,7 +29,7 @@
                 </svg>
                 <p class="ml-3 font-bold text-xl">Logout</p>
             </a>
-            </a>
+        </a>
         </div>
     </div>
 

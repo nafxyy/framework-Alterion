@@ -31,18 +31,24 @@ class AuthController extends Controller
     }
 
     public function loginAction(Request $request)
-    {
-        $data = [
-            'username' => $request->username,
-            'password' => $request->password,
-        ];
-        if (Auth::attempt($data)) {
+{
+    $credentials = $request->only('username', 'password');
+
+    if (Auth::attempt($credentials)) {
+        // Login berhasil
+
+        // Cek apakah pengguna memiliki peran sebagai admin
+        if (Auth::user()->username === 'admin') {
             return redirect('/staff/dashboard');
         } else {
-            session()->flash('error', 'Username atau Password anda salah!');
-            return redirect('/authentication');
+            return redirect('/');
         }
+    } else {
+        // Login gagal
+        session()->flash('error', 'Username atau Password anda salah!');
+        return redirect('/authentication');
     }
+}
 
     public function logout() {
         Auth::logout();

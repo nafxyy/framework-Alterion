@@ -13,6 +13,9 @@
                 <div class="w-full h-auto flex justify-start">
                     <a href= "{{route('staff.add')}}" class="px-4 py-2 bg-green-600 rounded-md text text-white">Tambah Data</a>
                 </div><br>
+                <div class="w-full h-auto flex justify-start">
+                    <a href= "{{ route('staff.download_excel') }}" class="px-4 py-2 bg-blue-400 rounded-md text text-white">Download Excel</a>
+                </div><br>
                 @if(session('successhapus'))
                         <div class="w-full relative mb-6">
                             <div class="p-2 rounded-sm bg-green-100 ring-1 ring-green-500">
@@ -69,6 +72,9 @@
                                     ID Kategori
                                 </th>
                                 <th scope="col" class="px-6 py-3">
+                                    Gambar
+                                </th>
+                                <th scope="col" class="px-6 py-3">
                                     Aksi
                                 </th>
                             </tr>
@@ -99,6 +105,9 @@
                                     </td>
                                     <td class="px-6 py-4">
                                         {{ $prd->kategori_id }}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        {{ $prd->nama }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap">
                                         <div class="w-full h-auto">

@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home',["produk"=>Produk::take(20)->get()]);
-});
+    return view('home',["produk"=>Produk::take(30)->get()]);
+})->name('home');
 
 
 Route::get('/data/produk', function () {
@@ -78,3 +78,5 @@ Route::controller(ProdukController::class)->group(function(){
     Route::post('/staff/produk/edit/{id}/action','update')->name('staff.update');
     Route::post('/staff/produk/delete/{id}/action', 'delete')->name('staff.delete');
 });
+
+Route::get('/staff/produk/download_excel', [ProdukController::class, 'download_excel'])->name('staff.download_excel');

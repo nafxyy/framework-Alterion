@@ -17,6 +17,7 @@ class ProdukFactory extends Factory
      */
     public function definition(): array
     {
+
         return [
             'id_produk' => fake()->unique()->numberBetween(1000, 9999),
             'nama' => fake()->name(),

@@ -40,7 +40,6 @@
                         <a href="{{ route('register') }}" class="text-sm text-end text-slate-900 hover:font-medium mt-4">Buat Akun Baru</a>
                         <div class="w-full flex justify-between mt-4">
                             <button type="submit" class="w-full h-auto py-4 mt-10 mr-12 ml-8 text-white font-medium bg-slate-900 rounded-md flex justify-center items-center hover:bg-slate-700">Sign In</button>
-                        
                         </div>
                     </form>
                 </div>
