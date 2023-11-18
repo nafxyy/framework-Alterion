@@ -5,8 +5,8 @@
 @endsection
 
 @section('content')
-    <div class="h-screen bg-slate-900 flex justify-center items-center">
-        <div class="w-8/12 h-screen p-16 pt-12 pb-12 rounded-xl bg-white text-center divide-y-2 flex flex-col">
+    <div class="bg-slate-900 flex justify-center items-center">
+        <div class="w-8/12 p-16 pt-12 pb-12 rounded-xl bg-white text-center divide-y-2 flex flex-col">
             <h1 class="text-3xl mb-4 font-bold">Tambah Data Produk</h1>
             <h5>Lets Add a New Data!</h5>
             <form action="{{ route('staff.store') }}" method="post" enctype="multipart/form-data" class="pt-8 w-full md:pl-8">
